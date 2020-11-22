@@ -1,0 +1,19 @@
+import React from "react";
+
+class Number1 extends React.Component {
+    getBackgroundColor() {
+        return "#fcfcfc";
+    }
+    render() {
+        return (
+            <div className="canvas-board">
+                <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" >
+                    <rect x="0" y="0" width="100%" height="100%" fill={this.getBackgroundColor()} stroke-width="1" stroke="#ccc" rx="5" />
+                    <rect x="13%" y="13%" width="74%" height="74%" fill="black" />
+                </svg>
+            </div>
+        );
+    }
+}
+
+export default Number1;
